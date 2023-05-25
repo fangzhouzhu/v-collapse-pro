@@ -21,8 +21,7 @@ Vue.use(vCollapsePro)
 | unfoldText | 展开 | 展开状态文字 |
 | foldText | 收起 | 收起状态文字 |
 | btnPosition | top-left | 按钮位置可选（top-left;top-center;top-right;bottom-left;bottom-center;bottom-right），默认左上角 |
-| foldText | 收起 | 收起状态文字 |
-| foldText | 收起 | 收起状态文字 |
+|
 
 | methods          | 值         | 备注         |
 | ---------------- | ---------- | ------------ |
