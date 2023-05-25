@@ -1,2 +1,26 @@
 # vue-collapse-pro
-一个vue组件，折叠面板，提供展开收起功能
+
+一个 vue 组件，折叠面板，提供展开收起功能
+
+使用方式
+
+```bash
+import vCollapsePro from "v-collapse-pro";
+
+import "v-collapse-pro/v-collapse-pro.css";
+
+Vue.use(vCollapsePro)
+```
+
+| props       | 默认值   | 备注                                                                                             |
+| ----------- | -------- | ------------------------------------------------------------------------------------------------ |
+| flod        | true     | 初始折叠状态                                                                                     |
+| unfoldText  | 展开     | 展开状态文字                                                                                     |
+| foldText    | 收起     | 收起状态文字                                                                                     |
+| btnPosition | top-left | 按钮位置可选（top-left;top-center;top-right;bottom-left;bottom-center;bottom-right），默认左上角 |
+| foldText    | 收起     | 收起状态文字                                                                                     |
+| foldText    | 收起     | 收起状态文字                                                                                     |
+
+| methods          | 值         | 备注         |
+| ---------------- | ---------- | ------------ |
+| updateFoldStatus | true/false | 改变折叠状态 |
