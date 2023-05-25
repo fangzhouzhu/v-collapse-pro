@@ -2,17 +2,15 @@
   <div id="app">
     <div>
       <h2>
-        测试
+
         <v-collapse-pro>
 
-
           <div style="background:#198">
-            <h3>
-              哈哈哈哈哈
-            </h3>
-            <div>
-              4455
-            </div>
+            <p>哈哈哈哈哈哈哈哈</p>
+            <p>哈哈哈哈哈哈哈哈</p>
+            <p>哈哈哈哈哈哈哈哈</p>
+            <p>哈哈哈哈哈哈哈哈</p>
+
           </div>
         </v-collapse-pro>
       </h2>

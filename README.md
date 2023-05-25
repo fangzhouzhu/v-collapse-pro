@@ -12,14 +12,17 @@ import "v-collapse-pro/v-collapse-pro.css";
 Vue.use(vCollapsePro)
 ```
 
-| props       | 默认值   | 备注                                                                                             |
+[展开视图](https://fangzhouzhu.github.io/v-collapse-pro/flod.jpg)![在这里插入图片描述](https://fangzhouzhu.github.io/v-collapse-pro/flod.jpg)
+
+[收起视图](https://fangzhouzhu.github.io/v-collapse-pro/unflod.jpg)![在这里插入图片描述](https://fangzhouzhu.github.io/v-collapse-pro/unflod.jpg)
+| props | 默认值 | 备注 |
 | ----------- | -------- | ------------------------------------------------------------------------------------------------ |
-| flod        | true     | 初始折叠状态                                                                                     |
-| unfoldText  | 展开     | 展开状态文字                                                                                     |
-| foldText    | 收起     | 收起状态文字                                                                                     |
+| flod | true | 初始折叠状态 |
+| unfoldText | 展开 | 展开状态文字 |
+| foldText | 收起 | 收起状态文字 |
 | btnPosition | top-left | 按钮位置可选（top-left;top-center;top-right;bottom-left;bottom-center;bottom-right），默认左上角 |
-| foldText    | 收起     | 收起状态文字                                                                                     |
-| foldText    | 收起     | 收起状态文字                                                                                     |
+| foldText | 收起 | 收起状态文字 |
+| foldText | 收起 | 收起状态文字 |
 
 | methods          | 值         | 备注         |
 | ---------------- | ---------- | ------------ |
