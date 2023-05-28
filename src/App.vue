@@ -1,30 +1,37 @@
 <template>
   <div id="app">
-    <div>
-      <h2>
-
-        <v-collapse-pro>
-
-          <div style="background:#198">
-            <p>哈哈哈哈哈哈哈哈</p>
-            <p>哈哈哈哈哈哈哈哈</p>
-            <p>哈哈哈哈哈哈哈哈</p>
-            <p>哈哈哈哈哈哈哈哈</p>
-
-          </div>
-        </v-collapse-pro>
-      </h2>
-    </div>
+    <v-collapse-pro ref="collapse" :fold="foldStatus" @collapseStatusChange="collapseStatusChange">
+      <div style="background:#198">
+        <p>哈哈哈哈哈哈哈哈</p>
+        <p>哈哈哈哈哈哈哈哈</p>
+        <p>哈哈哈哈哈哈哈哈</p>
+      </div>
+    </v-collapse-pro>
   </div>
 </template>
 
 <script>
+import { VCollapsePro } from "v-collapse-pro";
+import "v-collapse-pro/v-collapse-pro.css";
 
 export default {
-  name: 'App',
+  data() {
+    return {
+      foldStatus: false
+    }
+  },
   components: {
-
-  }
+    VCollapsePro
+  },
+  methods: {
+    handleChange() {
+      this.foldStatus = !this.foldStatus
+      this.$refs.collapse.updateFoldStatus(this.foldStatus)
+    },
+    collapseStatusChange(status) {
+      console.log(status)
+    }
+  },
 }
 </script>
 

@@ -1,14 +1,14 @@
 <template>
     <div class="collapse-container" :class="{ 'collapse-container-reverse': btnBottom }">
         <div class="collapse-head">
-            <slot name="head" :status="foldStatus">
+            <slot name="head" :foldStatus="foldStatus">
                 <span @click="handleChangeStatus" class="fold-btn" :class="['fold-btn-' + btnPosition]">
                     <i :class="[foldStatus ? 'arrow-up' : 'arrow-down']"></i>
                     <span class="fold-btn-text"> {{ collapseText }}</span>
                 </span>
             </slot>
         </div>
-        <div class="collapse-content-warp" :class="{ 'warp-hidden': foldStatus }">
+        <div class="collapse-content-warp" v-show="!foldStatus" :class="{ 'warp-hidden': foldStatus }">
             <slot></slot>
         </div>
     </div>
@@ -18,9 +18,9 @@
 export default {
     name: 'VCollapsePro',
     props: {
-        fold: {//折叠状态，默认展开
+        fold: {
             type: Boolean,
-            default: false
+            default: false//折叠状态，默认展开
         },
         unfoldText: {
             type: String,
@@ -34,7 +34,6 @@ export default {
             type: String,
             default: 'top-left'//top-left;top-center;top-right;bottom-left;bottom-center;bottom-right
         },
-
     },
     data() {
         return {
@@ -53,10 +52,15 @@ export default {
     methods: {
         handleChangeStatus() {
             this.foldStatus = !this.foldStatus
-            this.$emit('collapse-change', this.foldStatus)
         },
+        // 供外部调用
         updateFoldStatus(status) {
             this.foldStatus = status
+        }
+    },
+    watch: {
+        foldStatus() {
+            this.$emit('collapseStatusChange', this.foldStatus)
         }
     }
 }
@@ -83,7 +87,7 @@ export default {
 
 .warp-hidden {
     display: none;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .fold-btn {

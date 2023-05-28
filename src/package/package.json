@@ -1,0 +1,24 @@
+{
+  "name": "v-collapse-pro",
+  "version": "1.0.0",
+  "description": "一个 vue2 折叠面板组件，提供展开收起功能，支持自定义 head",
+  "main": "v-collapse-pro.common.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fangzhouzhu/v-collapse-pro.git"
+  },
+  "keywords": [
+    "vue",
+    "collapse",
+    "fold"
+  ],
+  "author": "zfz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fangzhouzhu/v-collapse-pro/issues"
+  },
+  "homepage": "https://github.com/fangzhouzhu/v-collapse-pro#readme"
+}
